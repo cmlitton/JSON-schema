@@ -1,0 +1,170 @@
+{
+	"$schema": "http://json-schema.org/schema#",
+	"type": "object",
+	"title": "Nudge (com.erikng.nudge)",
+	"description": "https://github.com/LcTrKiD/nudge",
+	"properties": {
+	"button_sub_titletext": {
+		"type": "string",
+		"title": "Button Sub-title text",
+		"default": "Click on the button below.",
+		"description": "This is the second set of text above the Update Machine button."
+	},
+	"button_title_text": {
+		"type": "string",
+		"title": "Button Title text",
+		"default": "Ready to start the update?",
+		"description": "This is the first set of text above the Update Machine button."
+	},
+	"cut_off_date": {
+		"type": "string",
+		"title": "Cutoff date",
+		"default": "2018-12-31-00:00",
+		"description": "Cut off date in UTC."
+	},
+	"cut_off_date_warning": {
+		"type": "integer",
+		"title": "Cut off date warning",
+		"default": "14",
+		"description": "This is the number, in days, of when to start the initial UI warning. When this set of days passes, the user will be required to hit the I Understand button, followed by the Close button to exit out of the UI."
+	},
+	"dismissal_count_threshold": {
+		"type": "integer",
+		"title": "Dismissal Count Threshold",
+		"default": "100",
+		"description": "This is the amount of times a user can disregard nudge before more aggressive behaviors kick in."
+	},
+	"logo_path": {
+		"type": "string",
+		"title": "Logo path",
+		"default": "/Some/Custom/Path/company_logo.png",
+		"description": "A custom logo path. Alternatively, just replace the included company_logo.png."
+	},
+	"main_subtitle_text": {
+		"type": "string",
+		"title": "Main Sub-title text",
+		"default": "A friendly reminder from your local IT team",
+		"description": "This is the text right under the main title."
+	},
+	"main_title_text": {
+		"type": "string",
+		"title": "Main Title text",
+		"default": "macOS Update",
+		"description": "This is the main, bolded text at the very top."
+	},
+	"minimum_os_sub_build_version": {
+		"type": "string",
+		"title": "Minimum OS Sub Version",
+		"default": "18G103",
+		"description": "This is the minimum OS version a machine must be on to not receive this UI."
+	},
+	"minimum_os_version": {
+		"type": "string",
+		"title": "Minimum OS Version",
+		"default": "10.13.6",
+		"description": "This is the minimum OS version a machine must be on to not receive this UI."
+	},
+	"more_info_url": {
+		"type": "string",
+		"title": "More info URL",
+		"default": "https://google.com",
+		"description": "This is the URL to open when the More Info button is clicked."
+	},
+	"no_timer": {
+		"type": "boolean",
+		"title": "No timer",
+		"default": "false",
+		"description": "Do not attempt to restore the nudge GUI to the front of a user's window."
+	},
+	"paragraph1_text": {
+		"type": "string",
+		"title": "Paragraph 1 text",
+		"default": "A fully up-to-date device is required to ensure that IT can your accurately protect your computer.",
+		"description": "This is the text for the first paragraph."
+	},
+	"paragraph2_text": {
+		"type": "string",
+		"title": "Paragraph 2 text",
+		"default": "If you do not update your computer, you may lose access to some items necessary for your day-to-day tasks.",
+		"description": "This is the text for the second paragraph."
+	},
+	"paragraph3_text": {
+		"type": "string",
+		"title": "Paragraph 3 text",
+		"default": "To begin the update, simply click on the button below and follow the provided steps.",
+		"description": "This is the text for the third paragraph."
+	},
+	"paragraph_title_text": {
+		"type": "string",
+		"title": "Paragraph Title text",
+		"default": "A security update is required on your machine.",
+		"description": "This is the bolded portion of the UI towards the top."
+	},
+	"path_to_app": {
+		"type": "string",
+		"title": "Path to app",
+		"default": "/Applications/Install macOS High Sierra.app",
+		"description": "This is the path to the macOS installer application."
+	},
+	"random_delay": {
+		"type": "boolean",
+		"title": "Random Delay",
+		"default": "true",
+		"description": "Randomize the UI popup by up to 20 minutes."
+	},
+	"screenshot_path": {
+		"type": "string",
+		"title": "Update screenshot path",
+		"default": "/Some/Custom/Path/update_ss.png",
+		"description": "A custom update screenshot path. Alternatively, just replace the included update_ss.png."
+	},
+	"time_between_notifications": {
+		"type": "integer",
+		"title": "Time Between Notifications",
+		"default": "0",
+		"description": "Instead of having the Nudge GUI appear every half hour, you can express the time between notification in seconds. *The notifications still base its behaviour in how the LaunchAgent works so every half hour it will check for this time between notifications."
+	},
+	"timer_day_1": {
+		"type": "integer",
+		"title": "Timer Day 1",
+		"default": "600",
+		"description": "The time, in seconds, to restore the nudge GUI to the front of a user's window. This will occur indefinitely until the UI is closed or macOS update is installed. This is when the update cutoff is one day or less."
+	},
+	"timer_day_3": {
+		"type": "integer",
+		"title": "Timer Day 3",
+		"default": "7200",
+		"description": "The time, in seconds, to restore the nudge GUI to the front of a user's window. This will occur indefinitely until the UI is closed or macOS update is installed. This is when the update cutoff is three days or less."
+	},
+	"timer_elapsed": {
+		"type": "integer",
+		"title": "Timer Elapsed",
+		"default": "10",
+		"description": "The time, in seconds, to restore the nudge GUI to the front of a user's window. This will occur indefinitely until the UI is closed or macOS update is installed. This is when the update cutoff has elapsed."
+	},
+	"timer_final": {
+		"type": "integer",
+		"title": "Timer Final",
+		"default": "60",
+		"description": "The time, in seconds, to restore the nudge GUI to the front of a user's window. This will occur indefinitely until the UI is closed or macOS update is installed. This is when the update is one hour or less."
+	},
+	"timer_initial": {
+		"type": "integer",
+		"title": "Timer Initial",
+		"default": "14400",
+		"description": "The time, in seconds, to restore the nudge GUI to the front of a user's window. This will occur indefinitely until the UI is closed or macOS update is installed. This is when the update cutoff is over three days."
+	},
+	"update_minor": {
+		"type": "boolean",
+		"title": "Update Minor",
+		"default": "true",
+		"description": "Perform Apple Software Updates."
+	},
+	"update_minor_days": {
+		"type": "integer",
+		"title": "Update Minor Days",
+		"default": "14",
+		"description": "Grace period before UI pops up to prompt for minor updates."
+	}
+}
+}
