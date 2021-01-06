@@ -70,6 +70,12 @@
 		"default": "https://google.com",
 		"description": "This is the URL to open when the More Info button is clicked."
 	},
+	 "local_url_for_upgrade": {
+   		 "type": "string",
+     		 "title": "Local URL for Upgrade",
+     		 "default": "jamfselfservice://",
+      		"description": "This is the full URL for a local self-servicing app such as Jamf Self Service."
+  	},
 	"no_timer": {
 		"type": "boolean",
 		"title": "No timer",
